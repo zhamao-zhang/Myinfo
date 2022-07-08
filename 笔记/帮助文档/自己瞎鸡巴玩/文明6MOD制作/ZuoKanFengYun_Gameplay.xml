@@ -1,0 +1,947 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--这一行与下面两行皆是注释，请留意注释格式-->
+<!--建议使用UE、Notepad++等编辑软件打开修改-->
+<!--###注意，请务必保持有效语句的首尾格式【<】【/>】，注意不要在把注释语句改成有效语句时把【/】误删###-->
+<!--更改除了科技等每回合产出之外的其他的修正时，比如修改了巨作槽位，请注意可能需要对应修改"\Base\Assets\Text\Translations\SOG_zh_Hans_CN.xml"里对建筑效果的描述，当然不改也没事儿，只不过说明文本里看不到改动而已，效果还在-->
+<!--###警告：当政策槽过多导致游戏初期政策填不满时，可能会出现无法进入下一回合的情况###-->
+<GameData>
+		
+
+	<TraitModifiers>
+		<!--增加总督点数-->
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_MAGIC_PALACE_GOVERNOR_POINTS"/>
+		
+		<!--增加边界扩张率-->
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_MAGIC_PALACE_CULTUREBORDER"/>
+		
+		<!-- 尤里卡获得100%科技
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_MAGIC_PALACE_BABYLON_EUREKA_INCREASE"/> -->
+		
+		<!--军事政策槽位修正-->
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_SOGMONUMENT_MILITARY_GOVERNMENT_SLOT"/>
+		
+		<!--经济政策槽位修正-->
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_SOGMONUMENT_ECONOMIC_GOVERNMENT_SLOT"/>
+		
+		<!--外交政策槽位修正-->
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_SOGMONUMENT_DIPLOMATIC_GOVERNMENT_SLOT"/>
+		
+		<!--通配符政策槽位修正-->
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_SOGMONUMENT_WILDCARD_GOVERNMENT_SLOT"/>
+		
+		<!--工人建造次数-->
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_SOG_ADJUST_BUILDER_CHARGES"/>
+		
+		<!--攻下城市强制信仰国教-->
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_TRAIT_EliteSoldier_CONQUISTADOR_CITY_RELIGION_COMBAT"/>
+		
+		<!--生产力-->
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_TRAIT_0001"/>
+		
+		<!--科研-->
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_TRAIT_0002"/>
+		
+		<!--信仰-->
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_TRAIT_0003"/>
+		
+		<!--文化-->
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_TRAIT_0004"/>
+		
+		<!--金钱-->
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_TRAIT_0005"/>
+		
+		<!--食物-->
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_TRAIT_0006"/>
+		
+		<!--铝资源-->
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_TRAIT_0011"/>
+		
+		<!--煤资源-->
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_TRAIT_0012"/>
+		
+		<!--马资源-->
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_TRAIT_0013"/>
+		
+		<!--铁资源-->
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_TRAIT_0014"/>
+		
+		<!--硝资源-->
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_TRAIT_0015"/>
+		
+		<!--油资源-->
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_TRAIT_0016"/>
+		
+		<!--铀矿资源-->
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_TRAIT_0017"/>
+		
+		<!--影响力-->
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_TRAIT_0020"/>
+		
+		<!--宗教单位传教次数增加-->
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_TRAIT_0023"/>
+		
+		<!--地块产出生产力增加-->
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_TRAIT_0024"/>
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_TRAIT_0024_MODIFIER"/>
+		
+		<!--地块产出科技增加-->
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_TRAIT_0050"/>
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_TRAIT_0050_MODIFIER"/>
+		
+		<!--地块产出文化增加-->
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_TRAIT_0051"/>
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_TRAIT_0051_MODIFIER"/>
+		
+		<!--地块产出食物增加-->
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_TRAIT_0052"/>
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_TRAIT_0052_MODIFIER"/>
+		
+		<!--地块产出金币增加-->
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_TRAIT_0053"/>
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_TRAIT_0053_MODIFIER"/>
+		
+		<!--地块产出信仰增加-->
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_TRAIT_0054"/>
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_TRAIT_0054_MODIFIER"/>
+		
+		<!--城市住房增加-->
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_TRAIT_0025"/>
+		
+		<!--城市宜居度增加-->
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_TRAIT_0026"/>
+		
+		<!--初始地块增加-->
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_TRAIT_0027"/>
+		
+		<!--初始人口增加-->
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_TRAIT_0028"/>
+		
+		<!--地块魅力增加-->
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_TRAIT_0029"/>
+		
+		<!--城市电力增加-->
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_TRAIT_0030"/>
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_TRAIT_0030_MODIFIER"/>
+		
+		<!--外交能见度增加-->
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_TRAIT_0031"/>
+		
+		<!--间谍容量增加-->
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_TRAIT_0032"/>
+		
+		<!--贸易容量增加-->
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_TRAIT_0033"/>
+		
+		<!--战略资源储备上限增加-->
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_TRAIT_0034"/>
+		
+		<!--发现奇观+1遗物-->
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_TRAIT_0035"/>
+		
+		<!--建造者加速区域-->
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_TRAIT_0036"/>
+		
+		<!--建造者加速奇观-->
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="ZZQ_TRAIT_0037"/>
+	</TraitModifiers>
+	
+	
+	<Modifiers>
+	
+		<!--增加总督点数-->
+		<Row>
+			<ModifierId>ZZQ_MAGIC_PALACE_GOVERNOR_POINTS</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_GOVERNOR_POINTS</ModifierType>
+			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+		</Row>
+		
+		<!--增加边界扩张率-->
+		<Row>
+			<ModifierId>ZZQ_MAGIC_PALACE_CULTUREBORDER</ModifierId>
+			<ModifierType>MODIFIER_ALL_CITIES_CULTURE_BORDER_EXPANSION</ModifierType>
+			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+		</Row>
+		
+		<!-- 尤里卡获得100%科技
+		<Row>
+			<ModifierId>ZZQ_MAGIC_PALACE_BABYLON_EUREKA_INCREASE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_TECHNOLOGY_BOOST</ModifierType>
+			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+		</Row> -->
+		
+		<!--军事政策槽位修正-->
+		<Row>
+			<ModifierId>ZZQ_SOGMONUMENT_MILITARY_GOVERNMENT_SLOT</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CULTURE_ADJUST_GOVERNMENT_SLOTS_MODIFIER</ModifierType>
+			<RunOnce>true</RunOnce>
+			<Permanent>true</Permanent>
+			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+		</Row>
+		
+		<!--经济政策槽位修正-->
+		<Row>
+			<ModifierId>ZZQ_SOGMONUMENT_ECONOMIC_GOVERNMENT_SLOT</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CULTURE_ADJUST_GOVERNMENT_SLOTS_MODIFIER</ModifierType>
+			<RunOnce>true</RunOnce>
+			<Permanent>true</Permanent>
+			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+		</Row>
+		
+		<!--外交政策槽位修正-->
+		<Row>
+			<ModifierId>ZZQ_SOGMONUMENT_DIPLOMATIC_GOVERNMENT_SLOT</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CULTURE_ADJUST_GOVERNMENT_SLOTS_MODIFIER</ModifierType>
+			<RunOnce>true</RunOnce>
+			<Permanent>true</Permanent>
+			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+		</Row>
+		
+		<!--通配符政策槽位修正-->
+		<Row>
+			<ModifierId>ZZQ_SOGMONUMENT_WILDCARD_GOVERNMENT_SLOT</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CULTURE_ADJUST_GOVERNMENT_SLOTS_MODIFIER</ModifierType>
+			<RunOnce>true</RunOnce>
+			<Permanent>true</Permanent>
+			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+		</Row>
+		
+		<!--工人建造次数-->
+		<Row>
+			<ModifierId>ZZQ_SOG_ADJUST_BUILDER_CHARGES</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNITS_ADJUST_BUILDER_CHARGES</ModifierType>
+			<SubjectRequirementSetId>UNIT_IS_BUILDER</SubjectRequirementSetId>
+			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+		</Row>
+		
+		<!--攻下城市强制信仰国教-->
+		<Row>
+			<ModifierId>ZZQ_TRAIT_EliteSoldier_CONQUISTADOR_CITY_RELIGION_COMBAT</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
+			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+		</Row>
+		
+		<!--生产力-->
+		<Row>
+			<ModifierId>ZZQ_TRAIT_0001</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
+			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+		</Row>
+		
+		<!--科研-->
+		<Row>
+			<ModifierId>ZZQ_TRAIT_0002</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
+			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+		</Row>
+		
+		<!--信仰-->
+		<Row>
+			<ModifierId>ZZQ_TRAIT_0003</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
+			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+		</Row>
+		
+		<!--文化-->
+		<Row>
+			<ModifierId>ZZQ_TRAIT_0004</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
+			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+		</Row>
+		
+		<!--金钱-->
+		<Row>
+			<ModifierId>ZZQ_TRAIT_0005</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
+			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+		</Row>
+		
+		<!--食物-->
+		<Row>
+			<ModifierId>ZZQ_TRAIT_0006</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
+			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+		</Row>
+		
+		<!--铝资源-->
+		<Row>
+			<ModifierId>ZZQ_TRAIT_0011</ModifierId>
+			<ModifierType>MODIFIER_SINGLE_CITY_ADJUST_FREE_RESOURCE_EXTRACTION</ModifierType>
+			<RunOnce>true</RunOnce>
+<Permanent>true</Permanent>
+			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+		</Row>
+		
+		<!--煤资源-->
+		<Row>
+			<ModifierId>ZZQ_TRAIT_0012</ModifierId>
+			<ModifierType>MODIFIER_SINGLE_CITY_ADJUST_FREE_RESOURCE_EXTRACTION</ModifierType>
+			<RunOnce>true</RunOnce>
+<Permanent>true</Permanent>
+			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+		</Row>
+		
+		<!--马资源-->
+		<Row>
+			<ModifierId>ZZQ_TRAIT_0013</ModifierId>
+			<ModifierType>MODIFIER_SINGLE_CITY_ADJUST_FREE_RESOURCE_EXTRACTION</ModifierType>
+			<RunOnce>true</RunOnce>
+<Permanent>true</Permanent>
+			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+		</Row>
+		
+		<!--铁资源-->
+		<Row>
+			<ModifierId>ZZQ_TRAIT_0014</ModifierId>
+			<ModifierType>MODIFIER_SINGLE_CITY_ADJUST_FREE_RESOURCE_EXTRACTION</ModifierType>
+			<RunOnce>true</RunOnce>
+<Permanent>true</Permanent>
+			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+		</Row>
+		
+		<!--硝资源-->
+		<Row>
+			<ModifierId>ZZQ_TRAIT_0015</ModifierId>
+			<ModifierType>MODIFIER_SINGLE_CITY_ADJUST_FREE_RESOURCE_EXTRACTION</ModifierType>
+			<RunOnce>true</RunOnce>
+<Permanent>true</Permanent>
+			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+		</Row>
+		
+		<!--油资源-->
+		<Row>
+			<ModifierId>ZZQ_TRAIT_0016</ModifierId>
+			<ModifierType>MODIFIER_SINGLE_CITY_ADJUST_FREE_RESOURCE_EXTRACTION</ModifierType>
+			<RunOnce>true</RunOnce>
+<Permanent>true</Permanent>
+			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+		</Row>
+		
+		<!--铀矿资源-->
+		<Row>
+			<ModifierId>ZZQ_TRAIT_0017</ModifierId>
+			<ModifierType>MODIFIER_SINGLE_CITY_ADJUST_FREE_RESOURCE_EXTRACTION</ModifierType>
+			<RunOnce>true</RunOnce>
+<Permanent>true</Permanent>
+			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+		</Row>
+		
+		<!--影响力-->
+		<Row>
+			<ModifierId>ZZQ_TRAIT_0020</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_INFLUENCE_POINTS_PER_TURN</ModifierType>
+			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+		</Row>
+		
+		<!--宗教单位传教次数增加-->
+		<Row>
+			<ModifierId>ZZQ_TRAIT_0023</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNITS_ADJUST_SPREAD_CHARGES</ModifierType>
+			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+		</Row>
+		
+		<!--地块产出生产力增加-->
+		<Row>
+			<ModifierId>ZZQ_TRAIT_0024</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ATTACH_MODIFIER</ModifierType>
+			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+		</Row>
+		<Row>
+<ModifierId>ZZQ_TRAIT_0024_MODIFIER</ModifierId>
+<ModifierType>MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD</ModifierType>
+<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+</Row>
+		
+		<!--地块产出科技增加-->
+		<Row>
+			<ModifierId>ZZQ_TRAIT_0050</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ATTACH_MODIFIER</ModifierType>
+			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+		</Row>
+		<Row>
+<ModifierId>ZZQ_TRAIT_0050_MODIFIER</ModifierId>
+<ModifierType>MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD</ModifierType>
+<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+</Row>
+		
+		<!--地块产出文化增加-->
+		<Row>
+			<ModifierId>ZZQ_TRAIT_0051</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ATTACH_MODIFIER</ModifierType>
+			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+		</Row>
+		<Row>
+<ModifierId>ZZQ_TRAIT_0051_MODIFIER</ModifierId>
+<ModifierType>MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD</ModifierType>
+<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+</Row>
+		
+		<!--地块产出食物增加-->
+		<Row>
+			<ModifierId>ZZQ_TRAIT_0052</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ATTACH_MODIFIER</ModifierType>
+			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+		</Row>
+		<Row>
+<ModifierId>ZZQ_TRAIT_0052_MODIFIER</ModifierId>
+<ModifierType>MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD</ModifierType>
+<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+</Row>
+		
+		<!--地块产出金币增加-->
+		<Row>
+			<ModifierId>ZZQ_TRAIT_0053</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ATTACH_MODIFIER</ModifierType>
+			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+		</Row>
+		<Row>
+<ModifierId>ZZQ_TRAIT_0053_MODIFIER</ModifierId>
+<ModifierType>MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD</ModifierType>
+<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+</Row>
+		
+		<!--地块产出信仰增加-->
+		<Row>
+			<ModifierId>ZZQ_TRAIT_0054</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ATTACH_MODIFIER</ModifierType>
+			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+		</Row>
+		<Row>
+<ModifierId>ZZQ_TRAIT_0054_MODIFIER</ModifierId>
+<ModifierType>MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD</ModifierType>
+<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+</Row>
+		
+		<!--城市住房增加-->
+		<Row>
+			<ModifierId>ZZQ_TRAIT_0025</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_POLICY_HOUSING</ModifierType>
+			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+		</Row>
+		
+		<!--城市宜居度增加-->
+		<Row>
+			<ModifierId>ZZQ_TRAIT_0026</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_POLICY_AMENITY</ModifierType>
+			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+		</Row>
+		
+		<!--初始地块增加-->
+		<Row>
+			<ModifierId>ZZQ_TRAIT_0027</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_CITY_TILES</ModifierType>
+			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+		</Row>
+		
+		<!--初始人口增加-->
+		<Row>
+			<ModifierId>ZZQ_TRAIT_0028</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADD_POPULATION</ModifierType>
+			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+		</Row>
+		
+		<!--地块魅力增加-->
+		<Row>
+			<ModifierId>ZZQ_TRAIT_0029</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_CITY_APPEAL</ModifierType>
+			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+		</Row>
+		
+		<!--城市电力增加-->
+		<Row>
+			<ModifierId>ZZQ_TRAIT_0030</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ATTACH_MODIFIER</ModifierType>
+			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>ZZQ_TRAIT_0030_MODIFIER</ModifierId>
+			<ModifierType>MODIFIER_SINGLE_CITY_ADJUST_FREE_POWER</ModifierType>
+			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+		</Row>
+		
+		<!--外交能见度增加-->
+		<Row>
+			<ModifierId>ZZQ_TRAIT_0031</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADD_DIPLO_VISIBILITY</ModifierType>
+			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+		</Row>
+		
+		<!--间谍容量增加-->
+		<Row>
+			<ModifierId>ZZQ_TRAIT_0032</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_GRANT_SPY</ModifierType>
+			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+		</Row>
+		
+		<!--贸易容量增加-->
+		<Row>
+			<ModifierId>ZZQ_TRAIT_0033</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_TRADE_ROUTE_CAPACITY</ModifierType>
+			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+		</Row>
+		
+		<!--战略资源储备上限增加-->
+		<Row>
+			<ModifierId>ZZQ_TRAIT_0034</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_RESOURCE_STOCKPILE_CAP</ModifierType>
+			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+		</Row>
+		
+		<!--发现奇观+1遗物-->
+		<Row>
+			<ModifierId>ZZQ_TRAIT_0035</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_NATURAL_WONDER_RELIC</ModifierType>
+			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+		</Row>
+		
+		<!--建造者加速区域-->
+		<Row>
+			<ModifierId>ZZQ_TRAIT_0036</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_UNIT_DISTRICT_PERCENT</ModifierType>
+			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+		</Row>
+		
+		<!--建造者加速奇观-->
+		<Row>
+			<ModifierId>ZZQ_TRAIT_0037</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_UNIT_WONDER_PERCENT</ModifierType>
+			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+		</Row>	
+	</Modifiers>
+	
+	<ModifierArguments>
+		<!--总督点数-->
+		<Row>
+			<ModifierId>ZZQ_MAGIC_PALACE_GOVERNOR_POINTS</ModifierId>
+			<Name>Delta</Name>
+			<Value>1</Value>
+		</Row>
+		
+		<!--增加边界扩张率-->
+		<Row>
+			<ModifierId>ZZQ_MAGIC_PALACE_CULTUREBORDER</ModifierId>
+			<Name>Amount</Name>
+			<Value>100</Value>
+		</Row>
+		
+		<!-- 尤里卡获得100%科技
+		<Row>
+			<ModifierId>ZZQ_MAGIC_PALACE_BABYLON_EUREKA_INCREASE</ModifierId>
+			<Name>Amount</Name>
+			<Value>80</Value>
+		</Row> -->
+		
+		<!--军事政策槽位修正的参数设置，请不要修改语句的内容-->
+		<Row>
+			<ModifierId>ZZQ_SOGMONUMENT_MILITARY_GOVERNMENT_SLOT</ModifierId>
+			<Name>GovernmentSlotType</Name>
+			<Value>SLOT_MILITARY</Value>
+		</Row>
+		
+		<!--经济政策槽位修正的参数设置，请不要修改语句的内容-->
+		<Row>
+			<ModifierId>ZZQ_SOGMONUMENT_ECONOMIC_GOVERNMENT_SLOT</ModifierId>
+			<Name>GovernmentSlotType</Name>
+			<Value>SLOT_ECONOMIC</Value>
+		</Row>
+		
+		<!--外交政策槽位修正的参数设置，请不要修改语句的内容-->
+		<Row>
+			<ModifierId>ZZQ_SOGMONUMENT_DIPLOMATIC_GOVERNMENT_SLOT</ModifierId>
+			<Name>GovernmentSlotType</Name>
+			<Value>SLOT_DIPLOMATIC</Value>
+		</Row>
+		
+		<!--通配符政策槽位修正的参数设置，请不要修改语句的内容-->
+		<Row>
+			<ModifierId>ZZQ_SOGMONUMENT_WILDCARD_GOVERNMENT_SLOT</ModifierId>
+			<Name>GovernmentSlotType</Name>
+			<Value>SLOT_WILDCARD</Value>
+		</Row>
+	
+		<!--工人建造次数+-->
+		<Row>
+			<ModifierId>ZZQ_SOG_ADJUST_BUILDER_CHARGES</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		
+		<!-- 占领城市后强制信仰本国国教。 -->
+		<Row>
+<ModifierId>ZZQ_TRAIT_EliteSoldier_CONQUISTADOR_CITY_RELIGION_COMBAT</ModifierId>
+<Name>ModifierId</Name>
+<Value>CONQUISTADOR_CITY_RELIGION_COMBAT</Value>
+
+</Row>
+<Row>
+<!--生产力-->
+<ModifierId>ZZQ_TRAIT_0001</ModifierId>
+<Name>YieldType</Name>
+<Value>YIELD_PRODUCTION</Value>
+</Row>
+<Row>
+<!--生产力-->
+<ModifierId>ZZQ_TRAIT_0001</ModifierId>
+<Name>Amount</Name>
+<Value>10</Value>
+</Row>
+<Row>
+<!--科研-->
+<ModifierId>ZZQ_TRAIT_0002</ModifierId>
+<Name>YieldType</Name>
+<Value>YIELD_SCIENCE</Value>
+</Row>
+<Row>
+<!--科研-->
+<ModifierId>ZZQ_TRAIT_0002</ModifierId>
+<Name>Amount</Name>
+<Value>3</Value>
+</Row>
+<Row>
+<!--信仰-->
+<ModifierId>ZZQ_TRAIT_0003</ModifierId>
+<Name>YieldType</Name>
+<Value>YIELD_FAITH</Value>
+</Row>
+<Row>
+<!--信仰-->
+<ModifierId>ZZQ_TRAIT_0003</ModifierId>
+<Name>Amount</Name>
+<Value>3</Value>
+</Row>
+<Row>
+<!--文化-->
+<ModifierId>ZZQ_TRAIT_0004</ModifierId>
+<Name>YieldType</Name>
+<Value>YIELD_CULTURE</Value>
+</Row>
+<Row>
+<!--文化-->
+<ModifierId>ZZQ_TRAIT_0004</ModifierId>
+<Name>Amount</Name>
+<Value>3</Value>
+</Row>
+<Row>
+<!--金钱-->
+<ModifierId>ZZQ_TRAIT_0005</ModifierId>
+<Name>YieldType</Name>
+<Value>YIELD_GOLD</Value>
+</Row>
+<Row>
+<!--金钱-->
+<ModifierId>ZZQ_TRAIT_0005</ModifierId>
+<Name>Amount</Name>
+<Value>30</Value>
+</Row>
+<Row>
+<!--食物-->
+<ModifierId>ZZQ_TRAIT_0006</ModifierId>
+<Name>YieldType</Name>
+<Value>YIELD_FOOD</Value>
+</Row>
+<Row>
+<!--食物-->
+<ModifierId>ZZQ_TRAIT_0006</ModifierId>
+<Name>Amount</Name>
+<Value>10</Value>
+</Row>	
+
+<!--铝资源-->
+<Row>
+<ModifierId>ZZQ_TRAIT_0011</ModifierId>
+<Name>ResourceType</Name>
+<Value>RESOURCE_ALUMINUM</Value>
+</Row>
+<Row>
+<ModifierId>ZZQ_TRAIT_0011</ModifierId>
+<Name>Amount</Name>
+<Value>3</Value>
+</Row>
+
+<!--煤资源-->
+<Row>
+<ModifierId>ZZQ_TRAIT_0012</ModifierId>
+<Name>ResourceType</Name>
+<Value>RESOURCE_COAL</Value>
+</Row>
+<Row>
+<ModifierId>ZZQ_TRAIT_0012</ModifierId>
+<Name>Amount</Name>
+<Value>3</Value>
+</Row>
+
+<!--马资源-->
+<Row>
+<ModifierId>ZZQ_TRAIT_0013</ModifierId>
+<Name>ResourceType</Name>
+<Value>RESOURCE_HORSES</Value>
+</Row>
+<Row>
+<ModifierId>ZZQ_TRAIT_0013</ModifierId>
+<Name>Amount</Name>
+<Value>3</Value>
+</Row>
+
+<!--铁资源-->
+<Row>
+<ModifierId>ZZQ_TRAIT_0014</ModifierId>
+<Name>ResourceType</Name>
+<Value>RESOURCE_IRON</Value>
+</Row>
+<Row>
+<ModifierId>ZZQ_TRAIT_0014</ModifierId>
+<Name>Amount</Name>
+<Value>3</Value>
+</Row>
+
+<!--硝资源-->
+<Row>
+<ModifierId>ZZQ_TRAIT_0015</ModifierId>
+<Name>ResourceType</Name>
+<Value>RESOURCE_NITER</Value>
+</Row>
+<Row>
+<ModifierId>ZZQ_TRAIT_0015</ModifierId>
+<Name>Amount</Name>
+<Value>3</Value>
+</Row>
+
+<!--油资源-->
+<Row>
+<ModifierId>ZZQ_TRAIT_0016</ModifierId>
+<Name>ResourceType</Name>
+<Value>RESOURCE_OIL</Value>
+</Row>
+<Row>
+<ModifierId>ZZQ_TRAIT_0016</ModifierId>
+<Name>Amount</Name>
+<Value>3</Value>
+</Row>
+
+<!--铀矿资源-->
+<Row>
+<ModifierId>ZZQ_TRAIT_0017</ModifierId>
+<Name>ResourceType</Name>
+<Value>RESOURCE_URANIUM</Value>
+</Row>
+<Row>
+<ModifierId>ZZQ_TRAIT_0017</ModifierId>
+<Name>Amount</Name>
+<Value>3</Value>
+</Row>
+
+<!--宗教单位传教次数增加-->
+<Row>
+<ModifierId>ZZQ_TRAIT_0023</ModifierId>
+<Name>Amount</Name>
+<Value>3</Value>
+</Row>
+
+
+<Row><!--地块产出生产力增加-->
+<ModifierId>ZZQ_TRAIT_0024</ModifierId>
+<Name>ModifierId</Name>
+<Value>ZZQ_TRAIT_0024_MODIFIER</Value>
+</Row>
+<Row>
+<ModifierId>ZZQ_TRAIT_0024_MODIFIER</ModifierId>
+<Name>YieldType</Name>
+<Value>YIELD_PRODUCTION</Value>
+</Row>
+<Row>
+<ModifierId>ZZQ_TRAIT_0024</ModifierId>
+<Name>Amount</Name>
+<Value>2</Value>
+</Row>
+
+<Row><!--地块产出科技增加-->
+<ModifierId>ZZQ_TRAIT_0050</ModifierId>
+<Name>ModifierId</Name>
+<Value>ZZQ_TRAIT_0050_MODIFIER</Value>
+</Row>
+<Row>
+<ModifierId>ZZQ_TRAIT_0050_MODIFIER</ModifierId>
+<Name>YieldType</Name>
+<Value>YIELD_SCIENCE</Value>
+</Row>
+<Row>
+<ModifierId>ZZQ_TRAIT_0050</ModifierId>
+<Name>Amount</Name>
+<Value>2</Value>
+</Row>
+
+<Row><!--地块产出文化增加-->
+<ModifierId>ZZQ_TRAIT_0051</ModifierId>
+<Name>ModifierId</Name>
+<Value>ZZQ_TRAIT_0051_MODIFIER</Value>
+</Row>
+<Row>
+<ModifierId>ZZQ_TRAIT_0051_MODIFIER</ModifierId>
+<Name>YieldType</Name>
+<Value>YIELD_CULTURE</Value>
+</Row>
+<Row>
+<ModifierId>ZZQ_TRAIT_0051</ModifierId>
+<Name>Amount</Name>
+<Value>2</Value>
+</Row>
+
+<Row><!--地块产出食物增加-->
+<ModifierId>ZZQ_TRAIT_0052</ModifierId>
+<Name>ModifierId</Name>
+<Value>ZZQ_TRAIT_0052_MODIFIER</Value>
+</Row>
+<Row>
+<ModifierId>ZZQ_TRAIT_0052_MODIFIER</ModifierId>
+<Name>YieldType</Name>
+<Value>YIELD_FOOD</Value>
+</Row>
+<Row>
+<ModifierId>ZZQ_TRAIT_0052</ModifierId>
+<Name>Amount</Name>
+<Value>5</Value>
+</Row>
+
+<Row><!--地块产出金币增加-->
+<ModifierId>ZZQ_TRAIT_0053</ModifierId>
+<Name>ModifierId</Name>
+<Value>ZZQ_TRAIT_0053_MODIFIER</Value>
+</Row>
+<Row>
+<ModifierId>ZZQ_TRAIT_0053_MODIFIER</ModifierId>
+<Name>YieldType</Name>
+<Value>YIELD_GOLD</Value>
+</Row>
+<Row>
+<ModifierId>ZZQ_TRAIT_0053</ModifierId>
+<Name>Amount</Name>
+<Value>5</Value>
+</Row>
+
+<Row><!--地块产出信仰增加-->
+<ModifierId>ZZQ_TRAIT_0054</ModifierId>
+<Name>ModifierId</Name>
+<Value>ZZQ_TRAIT_0054_MODIFIER</Value>
+</Row>
+<Row>
+<ModifierId>ZZQ_TRAIT_0054_MODIFIER</ModifierId>
+<Name>YieldType</Name>
+<Value>YIELD_FAITH</Value>
+</Row>
+<Row>
+<ModifierId>ZZQ_TRAIT_0054</ModifierId>
+<Name>Amount</Name>
+<Value>2</Value>
+</Row>
+
+
+<Row>
+<!--城市住房增加-->
+<ModifierId>ZZQ_TRAIT_0025</ModifierId>
+<Name>Amount</Name>
+<Value>50</Value>
+</Row>
+
+<Row>
+<!--城市宜居度增加-->
+<ModifierId>ZZQ_TRAIT_0026</ModifierId>
+<Name>Amount</Name>
+<Value>5</Value>
+</Row>
+
+<Row>
+<!--初始地块增加建城或占领城市时获得额外的单元格-->
+<ModifierId>ZZQ_TRAIT_0027</ModifierId>
+<Name>Amount</Name>
+<Value>20</Value>
+</Row>
+
+<Row>
+<!--初始人口增加-->
+<ModifierId>ZZQ_TRAIT_0028</ModifierId>
+<Name>Amount</Name>
+<Value>3</Value>
+</Row>
+
+<Row>
+<!--地块魅力增加-->
+<ModifierId>ZZQ_TRAIT_0029</ModifierId>
+<Name>Amount</Name>
+<Value>5</Value>
+</Row>
+
+<Row>
+<!--城市电力增加-->
+<ModifierId>ZZQ_TRAIT_0030</ModifierId>
+<Name>ModifierId</Name>
+<Value>ZZQ_TRAIT_0030_MODIFIER</Value>
+</Row>
+<Row>
+<ModifierId>ZZQ_TRAIT_0030_MODIFIER</ModifierId>
+<Name>Amount</Name>
+<Value>30</Value>
+</Row>
+
+<Row>
+<!--外交能见度增加-->
+<ModifierId>ZZQ_TRAIT_0031</ModifierId>
+<Name>Amount</Name>
+<Value>4</Value>
+</Row>
+<Row>
+<ModifierId>ZZQ_TRAIT_0031</ModifierId>
+<Name>Source</Name>
+<Value>SOURCE_TRAIT</Value>
+</Row>
+<Row>
+<ModifierId>ZZQ_TRAIT_0031</ModifierId>
+<Name>SourceType</Name>
+<Value>DIPLO_SOURCE_FEMALE_ONLY</Value>
+</Row>
+
+<Row>
+<!--间谍容量增加-->
+<ModifierId>ZZQ_TRAIT_0032</ModifierId>
+<Name>Amount</Name>
+<Value>100</Value>
+</Row>
+
+<Row>
+<!--贸易容量增加-->
+<ModifierId>ZZQ_TRAIT_0033</ModifierId>
+<Name>Amount</Name>
+<Value>10</Value>
+</Row>
+
+<Row>
+<!--战略资源储备上限增加-->
+<ModifierId>ZZQ_TRAIT_0034</ModifierId>
+<Name>Amount</Name>
+<Value>1000</Value>
+</Row>
+
+<Row>
+<!--发现奇观+1遗物-->
+<ModifierId>ZZQ_TRAIT_0035</ModifierId>
+<Name>Amount</Name>
+<Value>1</Value>
+</Row>
+
+<Row>
+<!--建造者加速区域%-->
+<ModifierId>ZZQ_TRAIT_0036</ModifierId>
+<Name>Amount</Name>
+<Value>100</Value>
+</Row>
+
+<Row>
+<!--建造者加速奇观%-->
+<ModifierId>ZZQ_TRAIT_0037</ModifierId>
+<Name>Amount</Name>
+<Value>100</Value>
+</Row>
+
+
+	
+	</ModifierArguments>
+
+</GameData>

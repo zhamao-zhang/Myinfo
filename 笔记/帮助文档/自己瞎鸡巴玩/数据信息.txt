@@ -1,0 +1,2 @@
+p站:用户名zhamao12  密码z13598753242.
+win10浏览器连接不到网络:先输入 netsh winsock reset  在输入netsh advfirewall reset
